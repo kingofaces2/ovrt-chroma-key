@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,700&display=swap');
+
+body {
+  background-color: #4D5057;
+  font-family: 'Catamaran', sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+#videosite {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  background-color: transparent;
+}
+
+#chromaLogo {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.input {
+  width: 800px;
+  margin: 0 auto;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.4em;
+  margin-top: 20px;
+}
+
+.input input {
+  width: 800px;
+  height: 80px;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.8em;
+  background-color: transparent;
+  border: none;
+  border-top: 3px solid #46ff49;
+  border-bottom: 3px solid #46ff49;
+  outline: none;
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.green-button {
+  display: block;
+  margin: 30px auto 0 auto;
+  text-align: center;
+	box-shadow: inset 0px 1px 0px 0px #e184f3;
+	background: linear-gradient(to bottom, #28a800 5%, #34de00 100%);
+	background-color: #00de00
+	border-radius: 6px;
+	border: 1px solid #34de00;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 40px;
+	font-weight: bold;
+	padding: 20px 40px;
+	text-decoration:none;
+	text-shadow: 0px 1px 0px #9b14b3;
+}
+
+.green-button:hover {
+	background: linear-gradient(to bottom, #ff0000 5%, #00de00 100%);
+	background-color: #ff0000;
+}
+
+.green-button:active {
+	position: relative;
+	top: 1px;
+}
+
+.footer {
+  margin-top: 70px;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.footage {
+  width: 100vw;
+  height: 100vh;
+  filter:  url(#chromakey)
+}
+
+.defs-only {
+  text-align: center;
+  position: absolute;
+  height: 0; 
+  width: 0;
+  background-color: transparent;
+  overflow: none;
+  left: -100%;
+}
