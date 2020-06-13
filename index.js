@@ -8,20 +8,50 @@ let chatWindowUid = null
 let button = document.querySelector('.green-button')
 
 function openChat() {
-  let username = document.getElementById('name').value
+  let username = document.getElementById('username').value
   if (!username.length) return
   // window.open(`${username}`)
-  localStorage.setItem('name', username)
-  ovrt.createWebWin(`${username}`)
+  localStorage.setItem('username', username)
+  //ovrt.createWebWin(`${username}`)
+  window.location.src = `${username}`, 400, 500;
 }
 
-var submit = document.getElementById("submit");
-
-submit.onclick = function(){
-	var name = document.getElementById("name").value;
+function changeSite() {
+	console.log(link);
 	
-	document.getElementById("outputName").innerText = name;
+	// console.log(document.getElementById("name").value);
+	// console.log(document.getElementById("name").innerText);
+	
+	document.getElementById("outputName").src = link;
 }
 
-function saveStaticDataToFile() {
+function runHtml() {
+	document.getElementById("openChat").src = document.getElementById("name").value;
+	document.body.style.backgroundColor= "transparent";
+	myFunction();
 }
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  
+  var y = document.getElementById("textField");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+}
+
+function inputFocused() {
+	SetKeyboardFocus(true);
+}
+
+function inputLost() {
+	SetKeyboardFocus(false);
+}
+
